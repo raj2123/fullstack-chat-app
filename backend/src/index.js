@@ -28,6 +28,9 @@ app.use(
 );
 
 // Routes
+app.get("/", (req, res) => {
+  res.send("Welcome to the Fullstack Chat App!");
+});
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
